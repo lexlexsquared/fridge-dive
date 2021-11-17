@@ -1,7 +1,7 @@
 /**
  * ************************************
  *
- * @module  fridgeReducer
+ * @module  diveReducer
  * @author
  * @date
  * @description reducer for market data
@@ -15,13 +15,14 @@
 
  };
  
- const fridgeReducer = (state = initialState, action) => {
+ const diveReducer = (state = initialState, action) => {
    switch (action.type) {
+  
  
      default:
        return state;
    }
  };
  
- export default fridgeReducer;
+ export default diveReducer;
  

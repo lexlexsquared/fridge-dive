@@ -10,9 +10,13 @@
  */
 
  import { combineReducers } from 'redux';
-//  import marketsReducer from './marketsReducer';
- 
+ import fridgeReducer from './fridgeReducer';
+ import diveReducer from './diveReducer';
+ import recipeReducer from './recipeReducer';
+
  export default combineReducers({
-  //  markets: marketsReducer,
+   fridge: fridgeReducer,
+   dive: diveReducer,
+   recipe: recipeReducer
  });
  

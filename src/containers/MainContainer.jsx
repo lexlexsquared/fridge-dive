@@ -12,8 +12,10 @@
  import React from 'react';
  import { connect } from 'react-redux';
 //  import TotalsDisplay from '../components/TotalsDisplay';
-//  import MarketsContainer from './MarketsContainer';
+ import DiveContainer from './DiveContainer.jsx';
+ import FridgeContainer from './FridgeContainer.jsx';
  import * as actions from '../actions/actions';
+  import RecipesContainer from './RecipesContainer.jsx';
  
  const mapStateToProps = ({
   //  markets: { totalCards, totalMarkets, synced },
@@ -27,15 +29,16 @@
   //  syncMarkets: () => dispatch(actions.syncMarkets()),
  });
  
- const MainContainer = props => (
+ const MainContainer = (/*props*/ )=> (
    <div className="container">
      <div className="outerBox">
-       <h1 id="header">MegaMarket Loyalty Cards</h1>
-       {/* <TotalsDisplay {...props} />
-       <MarketsContainer /> */}
+       <h1 id="header">I am main</h1>
+       <DiveContainer />
+       <FridgeContainer />
+       <RecipesContainer />
      </div>
    </div>
  );
  
- export default connect(mapStateToProps, mapDispatchToProps)(MainContainer);
- 
+//  export default connect(mapStateToProps, mapDispatchToProps)(MainContainer);
+ export default (MainContainer);
