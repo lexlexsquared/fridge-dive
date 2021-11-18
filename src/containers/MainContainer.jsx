@@ -35,7 +35,7 @@
  const MainContainer = (props )=> (
    <div className="container">
      <div className="outerBox">
-       {/* <h1 id="header">I am main</h1> */}
+       {/* <h1 id="header">FRIDGE DIVE</h1> */}
        <DiveContainer {...props}/>
        <FridgeContainer />
        <RecipesContainer {...props}/>

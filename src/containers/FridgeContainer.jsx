@@ -19,7 +19,7 @@
  const FridgeContainer = props => (
   <div className="container">
     <div className="fridgeBox">
-    <h1 id="header">I am fridge</h1>
+    <h1 id="header">FRIDGE to Stomach Pipeline (YOU SAVED THESE, GO YOU!)</h1>
       <FridgeDisplay />
     </div>
   </div>

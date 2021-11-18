@@ -15,27 +15,32 @@
 
  import * as actions from '../actions/actions';
  
-//  const mapStateToProps = ({
-//   //  markets: { totalCards, totalMarkets, synced },
-//  }) => ({
-//   //  totalCards,
-//   //  totalMarkets,
-//   //  synced,
-//  });
- 
-//  const mapDispatchToProps = dispatch => ({
-//   //  syncMarkets: () => dispatch(actions.syncMarkets()),
-//  });
+ const mapStateToProps = ({
+  dive: { ing1, ing2, ing3, getRecipes, diveIn },
+}) => ({
+   ing1, 
+   ing2, 
+   ing3, 
+   getRecipes, 
+   diveIn
+});
+
+const mapDispatchToProps = dispatch => ({
+  getRecipes: () => dispatch(actions.getRecipes()),
+  diveIn: () => dispatch(actions.diveIn())
+});
  
  const DiveContainer = props => (
    <div className="container">
      <div className="outerBox">
-       <h1 id="header">I am Dive</h1>
-       <DiveCreator />
+       <h1 id="header"><strong>FRIDGE DIVE.</strong></h1>
+       <h2 id="header">Wasting food sucks. It's a waste of money and makes Mama Earth unhappy.</h2> 
+       <h2>Let's change that.</h2>
+       <DiveCreator {...props}/>
      </div>
    </div>
  );
  
-//  export default connect(mapStateToProps, mapDispatchToProps)(DiveContainer);
+ export default connect(mapStateToProps, mapDispatchToProps)(DiveContainer);
   
- export default (DiveContainer);
+//  export default (DiveContainer);

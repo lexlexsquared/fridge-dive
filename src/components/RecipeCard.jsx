@@ -24,16 +24,19 @@ const RecipeCard = ({
 
         {/* <li className="charDetail">Homeworld: {homeworld} <span className="icon"><FAIcon icon={faQuestionCircle} size="xs" style={{color: 'steelBlue'}} onClick={e => openDetailsModal(e, 'homeworld', homeworld_id)} /></span></li>> */}
     </article>
+
     <section>
-    <h3>I am a measurements section</h3>
     <label>Ingredient1 Amount Used:</label>
   <input type="text" id="addMeasFields" name="ing1Meas"></input>
+
   <label>Ingredient2 Amount Used:</label>
   <input type="text" id="addMeasFields" name="ing1Meas"></input>
+  
   <label>Ingredient3 Amount Used:</label>
-  <input type="text" id="addMeasFieldss" name="ing1Meas"></input>
+  <input type="text" id="addMeasFields" name="ing1Meas"></input>
   
     </section>    
+    
     </div>
   );
 };

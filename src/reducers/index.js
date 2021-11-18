@@ -10,13 +10,11 @@
  */
 
  import { combineReducers } from 'redux';
- import fridgeReducer from './fridgeReducer';
  import diveReducer from './diveReducer';
- import recipeReducer from './recipeReducer';
 
  export default combineReducers({
-   fridge: fridgeReducer,
+  //  fridge: fridgeReducer,
    dive: diveReducer,
-   recipe: recipeReducer
+  //  recipe: recipeReducer
  });
  

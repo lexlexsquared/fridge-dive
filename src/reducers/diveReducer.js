@@ -12,7 +12,14 @@
  import * as types from '../constants/actionTypes';
 
  const initialState = {
-
+  ing1: '',
+  ing2: '',
+  ing3: '',
+  measure1: [],
+  measure2: [],
+  measure3: [],
+  getRecipe: false,
+  diveIn: false,
  };
  
  const diveReducer = (state = initialState, action) => {

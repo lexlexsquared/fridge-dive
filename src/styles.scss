@@ -1,27 +1,30 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Helvetica, Roboto, Arial, sans-serif;
-  color: lightcoral;
+  font-family: 'Amatic SC', cursive;
+  color: darkslateblue;
+  background-color: lighten($color: lightsteelblue, $amount: 1);
 }
 header {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Helvetica, Roboto, Arial, sans-serif;
-  color: green;
+  font-family: 'Amatic SC', cursive;
+
+  color: darkslategray
 }
 .recipeBox {
-  padding: 5px;
+  padding: 10px;
   width:30%;
   margin: 5px 5px 13px 10px;
   float:left;
   font-size: .8em;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, .2);
+  background-color: mintcream;
 }
 .outerBox {
   max-width: 650px;
   margin: 0 auto;
   padding: 10px;
-  box-shadow: 10px 15px 39px rgba(0, 0, 0, .2);
+  box-shadow: 5px 10px 39px rgba(0, 0, 0, .2);
+  background-color: lighten($color: lightgrey, $amount: 3);
   border-radius: 5px;
+
 }
 .innerbox {
   padding: 10px;
@@ -31,22 +34,49 @@ header {
   /* display: grid; */
 }
 .diveBox {
-  overflow: auto;
+  // overflow: auto;
+  text-align: center;
   padding-top: 10px;
-  border: 5px solid lightgreen;
+  margin: 10px auto;
+  // border: 5px solid slategray;
+  // box-shadow: 10px 15px 39px rgba(0, 0, 0, .2);
+  border: 5px solid lightgray;
+  background-color: lighten($color: lightsteelblue, $amount: 10);
 }
 .fridgeBox {
   overflow: auto;
   padding-top: 10px;
-  border: 5px solid lightblue;
+  padding-bottom: 10px;
+  border: 1px solid lighten($color: lightsteelblue, $amount: 5);
+  background-color: lighten($color: lightsteelblue, $amount: 15);
 }
+
 .recipeBoxOuter {
   overflow: auto;
   padding-top: 10px;
-  border: 5px solid lightpink;
+  border: 2px solid lavender;
+  background-color: lighten($color: lavender, $amount: 5);
 }
 .addMeasFields {
-  width: 100%;
+  width: 5px;
   display: flex;
   margin-bottom: 0.2rem;
 }
+
+.addIngSelect {
+  width: 10px;
+  display: flex;
+  margin-bottom: 0.2rem;
+}
+.ingSelector {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.actionButtons {
+  display: flexbox;
+  flex-direction: column;
+}
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Rock+Salt&display=swap');
