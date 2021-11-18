@@ -14,11 +14,11 @@ const RecipeCard = ({
   // };
 
   return (
-    <div>
+    <div className="recipeBox">
       <h3>I am a recipe Card</h3>
     <article className="card charCard">
       <div className="charHeadContainer">
-        <h3 className="mealName">MealName</h3>
+        <h3 className="mealName">MealId</h3>
       </div>
         <li className="charDetail">Recipe: link</li>
 
@@ -26,6 +26,13 @@ const RecipeCard = ({
     </article>
     <section>
     <h3>I am a measurements section</h3>
+    <label>Ingredient1 Amount Used:</label>
+  <input type="text" id="addMeasFields" name="ing1Meas"></input>
+  <label>Ingredient2 Amount Used:</label>
+  <input type="text" id="addMeasFields" name="ing1Meas"></input>
+  <label>Ingredient3 Amount Used:</label>
+  <input type="text" id="addMeasFieldss" name="ing1Meas"></input>
+  
     </section>    
     </div>
   );

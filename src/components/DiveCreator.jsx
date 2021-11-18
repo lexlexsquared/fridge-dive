@@ -12,7 +12,7 @@ const DiveCreator = () => {
     });
 
   return (  
-    <div><section>
+    <div className="diveBox"><section>
       <header><h4>I am here, Dive Creator</h4></header>
       <article>Enter Ingredients:</article>
       <label>Ingredient 1:</label>

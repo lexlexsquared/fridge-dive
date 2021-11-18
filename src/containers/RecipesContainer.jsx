@@ -18,7 +18,7 @@
  
  const RecipesContainer = (/*props*/) => (
   <div className="container">
-    <div className="outerBox">
+    <div className="recipeBoxOuter">
     <h1 id="header">I am recipes</h1>
       <RecipeCard />
     </div>

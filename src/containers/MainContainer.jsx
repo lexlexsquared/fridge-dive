@@ -18,27 +18,30 @@
   import RecipesContainer from './RecipesContainer.jsx';
  
  const mapStateToProps = ({
-  //  markets: { totalCards, totalMarkets, synced },
+   dive: { ing1, ing2, ing3, getRecipes, diveIn },
  }) => ({
-  //  totalCards,
-  //  totalMarkets,
-  //  synced,
+    ing1, 
+    ing2, 
+    ing3, 
+    getRecipes, 
+    diveIn
  });
  
  const mapDispatchToProps = dispatch => ({
-  //  syncMarkets: () => dispatch(actions.syncMarkets()),
+   getRecipes: () => dispatch(actions.getRecipes()),
+   diveIn: () => dispatch(actions.diveIn())
  });
  
- const MainContainer = (/*props*/ )=> (
+ const MainContainer = (props )=> (
    <div className="container">
      <div className="outerBox">
-       <h1 id="header">I am main</h1>
-       <DiveContainer />
+       {/* <h1 id="header">I am main</h1> */}
+       <DiveContainer {...props}/>
        <FridgeContainer />
-       <RecipesContainer />
+       <RecipesContainer {...props}/>
      </div>
    </div>
  );
  
-//  export default connect(mapStateToProps, mapDispatchToProps)(MainContainer);
- export default (MainContainer);
+ export default connect(mapStateToProps, mapDispatchToProps)(MainContainer);
+//  export default (MainContainer);

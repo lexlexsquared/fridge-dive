@@ -18,9 +18,9 @@
  
  const FridgeContainer = props => (
   <div className="container">
-    <div className="outerBox">
+    <div className="fridgeBox">
     <h1 id="header">I am fridge</h1>
-      {/* <FridgeDisplay /> */}
+      <FridgeDisplay />
     </div>
   </div>
 );
