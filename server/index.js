@@ -11,16 +11,16 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.use(express.static(path.join(__dirname, '../dist')));
-// app.use('/api', router);
+app.use('/api', router);
 
-// app.get('/api', (req, res) => {
-//   return res.status(200).send(JSON());
-// });
+app.get('/api', (req, res) => {
+  return res.status(200).json();
+});
 
 app.get('/', (req, res) => {
  return res.status(200).send(path.join(__dirname, '../index.html'));
 });
-
+app.get('*',(req, res) => res.status(404).send('This is not the page you\'re looking for...'));
 app.use((err, req, res, next) => {
   const defaultErr = {
     log: 'Express error handler caught unknown middleware error',

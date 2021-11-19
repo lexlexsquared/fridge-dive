@@ -3,14 +3,18 @@ const queryMDBrecipe = "https://www.themealdb.com/api/json/v2/9973533/lookup.php
 
 const diveController = {};
 
-// diveController.getRecipes('/', async (req, res, next) => {
-//   const { ing } = req.params;
-//   const result = await(fetch(queryMDB+ing));
-//   if (err) return(next(err));
-//   const ingObj = {};
-//   ingObj.ing = []; //ing for each when more than one
-//   ingObj = res.locals.ings
-// })
+diveController.getRecipes = async (req, res, next) => {
+  try{
+    const ing = req.query;
+  const result = await(fetch(queryMDBfilter+ing));
+  console.log(result);
+
+  return next()}
+  catch(err){
+    return next(console.log(err))
+
+  }
+}
 
 // diveController.viewRecipe('', async(req, res, next) => {
 //   if (err) return(next(err));

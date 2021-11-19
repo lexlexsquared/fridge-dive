@@ -14,11 +14,16 @@
 
  export const getRecipes = data => ({
    type: types.GET_RECIPES,
-   payload: id,
+   payload: data,
  });
  
  export const diveIn = id => ({
    type: types.DIVE_IN,
    payload: data,
  });
+
+ export const updateQuery = data => ({
+   type: types.UPDATE_QUERY,
+   payload: data,
+ })
  

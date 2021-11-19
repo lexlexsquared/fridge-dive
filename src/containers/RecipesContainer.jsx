@@ -17,9 +17,9 @@
 //     ing3Meas: dive.ing3Meas,
 //  });
  
-//  const mapDispatchToProps = dispatch => bindActionCreators(actions, dispatch);
+ const mapDispatchToProps = dispatch => bindActionCreators(actions, dispatch);
  
- const RecipesContainer = (/*props*/) => (
+ const RecipesContainer = (props) => (
   <div className="container">
     <div className="recipeBoxOuter">
     <h1 id="header">RECIPES. Cook and get DEM IN YOUR BELLY!</h1>
